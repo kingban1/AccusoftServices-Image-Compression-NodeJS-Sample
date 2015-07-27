@@ -6,7 +6,7 @@ The Accusoft Cloud Services image compression API gives you faster image compres
 Download the package and type 
 
 	npm install
-Open config.json and replace everything withing the quotes including the curly braces with a valid [api key](http://www.accusoft.com/portal/ "Get your api key") obtained for **free** from accusoft.com.
+Open config.json and replace everything within the quotes including the curly braces with a valid [api key](http://www.accusoft.com/portal/ "Get your api key") obtained for **free** from accusoft.com.
 
 	{
 	  "apiKey": "{{ valid key here }}"
@@ -51,7 +51,7 @@ The first step is to create the base module and make a check for the api key.
 	  this.apiKey = config.apiKey;
 	}
 
-####Creating the reduce method within the compress module.
+####Creating the reduce method within the compress module
 In this function, the contents are read from the **inputFilePath**, sent to the Accusoft Cloud Services api, and the compressed file is placed into the **outputFilePath**. In this example code, a callback function is required.
 
 	CompressService.prototype.reduce = function (inputFilePath, outputFilePath, callback) {
