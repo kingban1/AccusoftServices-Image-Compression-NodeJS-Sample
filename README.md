@@ -1,7 +1,7 @@
 # nodejs image compression
 The following is sample code for compressing an image using node.js along with Accusoft Cloud Services API
 ###Overview
-The Accusoft Cloud Services image compression API gives you faster image compression, decompression and higher-quality images, saving you space for storing your images and improving the performance of your website and web applications. Compress JPG and PNG files. Learn more about [Accusoft Cloud Services image compression here](https://www.accusoft.com/products/accusoft-cloud-services/acs-compression/).
+The Accusoft Cloud Services (ACS) image compression API gives you faster image compression and decompression, and higher-quality images, saving you space for storing your images and improving the performance of your website and web applications. Compress JPG and PNG files. Learn more about [Accusoft Cloud Services image compression here](https://www.accusoft.com/products/accusoft-cloud-services/acs-compression/).
 ###Installation
 Download the package and type 
 
@@ -26,7 +26,7 @@ From within the subdirectory where you installed this code example, type
 	node app reduce ./mybigfile.jpg ./mysmallfile.jpg
 
 ###Explanation
-This is a fully functioning example to get you started using the compress service. The main call to the api is within **compress.js**. Here is a brief walkthrough of that file.
+This is a fully functioning example to get you started using the compression service. The main call to the api is within **compress.js**. Here is a brief walkthrough of that file.
 
 
 ####Including required node modules
@@ -52,7 +52,7 @@ The first step is to create the base module and make a check for the api key.
 	}
 
 ####Creating the reduce method within the compress module
-In this function, the contents are read from the **inputFilePath**, sent to the Accusoft Cloud Services api, and the compressed file is placed into the **outputFilePath**. In this example code, a callback function is required.
+In this function, the contents are read from the **inputFilePath**, sent to the ACS api, and the compressed file is placed into the **outputFilePath**. In this example code, a callback function is required.
 
 	CompressService.prototype.reduce = function (inputFilePath, outputFilePath, callback) {
 	  if (!callback) {
