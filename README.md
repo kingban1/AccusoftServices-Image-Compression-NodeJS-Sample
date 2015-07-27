@@ -1,12 +1,12 @@
 # nodejs image compression
-Sample code for compressing an image using node.js with Accusoft Cloud Services API
+The following is sample code for compressing an image using node.js along with with Accusoft Cloud Services API
 ###Overview
 The Accusoft Cloud Services image compression API gives you faster image compression, decompression and higher-quality images, saving you space for storing your images and improving the performance of your website and web applications. Compress JPG and PNG files. Learn more about [Accusoft Cloud Services image compression here](https://www.accusoft.com/products/accusoft-cloud-services/acs-compression/).
 ###Installation
 Download the package and type 
 
 	npm install
-Open config.json and replace everything within the quotes including the curly braces with a valid [api key](http://www.accusoft.com/portal/ "Get your api key") obtained for **free** from accusoft.com.
+Open config.json and replace everything withing the quotes including the curly braces with a valid [api key](http://www.accusoft.com/portal/ "Get your api key") obtained for **free** from accusoft.com.
 
 	{
 	  "apiKey": "{{ valid key here }}"
@@ -51,7 +51,7 @@ The first step is to create the base module and make a check for the api key.
 	  this.apiKey = config.apiKey;
 	}
 
-####Creating the reduce method within the compress module
+####Creating the reduce method within the compress module.
 In this function, the contents are read from the **inputFilePath**, sent to the Accusoft Cloud Services api, and the compressed file is placed into the **outputFilePath**. In this example code, a callback function is required.
 
 	CompressService.prototype.reduce = function (inputFilePath, outputFilePath, callback) {
