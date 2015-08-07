@@ -1,5 +1,5 @@
 # node.js image compression
-The following is sample code for node.js image compression using Accusoft Cloud Services API. **nodejs image compression**. image comression nodejs
+The following is sample code for node.js image compression using Accusoft Cloud Services API.  image compression nodejs
 ###Overview
 The Accusoft Cloud Services (ACS) image compression API gives you faster image compression and decompression, and higher-quality images, saving you space for storing your images and improving the performance of your website and web applications. Compress JPG and PNG files. Learn more about [Accusoft Cloud Services image compression here](https://www.accusoft.com/products/accusoft-cloud-services/acs-compression/).
 ###Installation
