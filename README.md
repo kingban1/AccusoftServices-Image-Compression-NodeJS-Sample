@@ -1,10 +1,10 @@
 # node.js image compression example code
 The following is sample code for nodejs image compression using Accusoft Services API.  
-###Overview
+### Overview
 The Accusoft Services image compression API gives you faster image compression and decompression, and higher-quality images, saving you space for storing your images and improving the performance of your website and web applications. Compress JPG and PNG files.
 
 Learn more about [Accusoft Services image compression here](https://www.accusoft.com/products/accusoft-cloud-services/acs-compression/).
-###Installation
+### Installation
 Download the package and type
 
 	npm install
@@ -15,7 +15,7 @@ Open **config.json** and replace everything within the quotes including the curl
 	}
 
 This code will not function without a valid api key. Please sign up at [www.accusoft.com/products/accusoft-cloud-services/portal/](http://www.accusoft.com/portal/ "Get your api key") to get your key.
-###Usage instructions
+### Usage instructions
 From within the subdirectory where you installed this code example, type
 
 	node app OPERATION INPUT PATH
@@ -24,21 +24,21 @@ From within the subdirectory where you installed this code example, type
 		INPUT: path to your file, including filename
 		PATH: path to your output file, including the filename
 
-###Example
+### Example
 	node app reduce ./mybigfile.jpg ./mysmallfile.jpg
 
-###Explanation
+### Explanation
 This is a fully functioning example to get you started using the compression service. The main call to the api is within **compress.js**. Here is a brief walkthrough of that file.
 
 
-####Including required node modules
+#### Including required node modules
 	'use strict';
 
 	var path = require('path'),
 	  fs = require('fs'),
 	  request = require('request');
 
-####Creating a compress service module
+#### Creating a compress service module
 The first step is to create the base module and make a check for the api key.
 
 	function CompressService(config) {
@@ -53,7 +53,7 @@ The first step is to create the base module and make a check for the api key.
 	  this.apiKey = config.apiKey;
 	}
 
-####Creating the reduce method within the compress module
+#### Creating the reduce method within the compress module
 In this function, the contents are read from the **inputFilePath**, sent to the Accusoft Services api, and the compressed file is placed into the **outputFilePath**. In this example code, a callback function is required.
 
 	CompressService.prototype.reduce = function (inputFilePath, outputFilePath, callback) {
@@ -95,12 +95,12 @@ In this function, the contents are read from the **inputFilePath**, sent to the 
 	      }));
 	};
 
-####Exporting the module
+#### Exporting the module
 The final step is to export the module for use by the main app.
 
 	module.exports = CompressService;
 
-##Support
+## Support
 Learn more about [Accusoft Services image compression here](https://www.accusoft.com/products/accusoft-cloud-services/acs-compression/).
 
 If you have questions, please visit our online [help center](https://accusofthelp.zendesk.com/hc/en-us).
