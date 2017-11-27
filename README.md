@@ -72,7 +72,7 @@ In this function, the contents are read from the **inputFilePath**, sent to the 
 	  var fileName = path.basename(inputFilePath);
 
 	  var options = {
-	    url: 'https://dev-api.accusoft.com/v1/imageReducers/' + fileName,
+	    url: 'https://api.accusoft.com/v1/imageReducers/' + fileName,
 	    headers: {
 	      'acs-api-key': this.apiKey
 	    }
